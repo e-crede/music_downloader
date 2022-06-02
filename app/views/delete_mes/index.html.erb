@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Delete mes</h1>
+
+<div id="delete_mes">
+  <% @delete_mes.each do |delete_me| %>
+    <%= render delete_me %>
+    <p>
+      <%= link_to "Show this delete me", delete_me %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New delete me", new_delete_me_path %>
