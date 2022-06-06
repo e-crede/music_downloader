@@ -12,7 +12,7 @@ class ConverterJob < ApplicationJob
 
   def around_status
     yield
-    #@object[:status] = 'FINISH'
-    #@object.save
+    @object[:status] = 'FINISH'
+    @object.save
   end
 end

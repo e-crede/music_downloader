@@ -1,4 +1,2 @@
-<% # TODO: ajax to check :status, once 'FINISH' reach, redirect to download page%>
-Downloading...
-<br>
-<%= @object[:status] %>
+<p><%= @object[:filename] %> is ready for download</p>
+<a href="<%= @object[:filename] %>" download>Download MP3</a>
